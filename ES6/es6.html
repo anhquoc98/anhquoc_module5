@@ -35,8 +35,8 @@
     ];
 
     //yêu cầu 1
-    courses.filter(value => value.rating >= 4);
-    console.log(courses)
+    result=courses.filter(courses => courses.rating >= 4);
+    console.log(result)
 
     //yêu cầu 2
     let addedCourses = [
@@ -56,13 +56,13 @@
             rating: 3.8,
         }
     ];
-    filterCourses = addedCourses.filter(function (course, index, array) {
-        return course.rating < 4;
-    });
+    filterCourses = addedCourses.filter(addedCourses => addedCourses.rating <4)
+
+
     console.log(filterCourses)
 
     // yêu cầu 3
-     editCourses = [...courses,addedCourses];
+     editCourses = [...courses,...addedCourses];
     console.log(editCourses)
 </script>
 </body>
