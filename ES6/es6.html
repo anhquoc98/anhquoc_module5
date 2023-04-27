@@ -35,7 +35,7 @@
     ];
 
     //yêu cầu 1
-    result=courses.filter(courses => courses.rating >= 4);
+    let result = courses.filter(courses => courses.rating >= 4);
     console.log(result)
 
     //yêu cầu 2
@@ -56,13 +56,11 @@
             rating: 3.8,
         }
     ];
-    filterCourses = addedCourses.filter(addedCourses => addedCourses.rating <4)
-
-
+    let filterCourses = addedCourses.filter(addedCourses => addedCourses.rating < 4).map(addedCourse => addedCourse.id + "-" + addedCourse.title + "-" + addedCourse.rating)
     console.log(filterCourses)
 
     // yêu cầu 3
-     editCourses = [...courses,...addedCourses];
+    let editCourses = [...courses, ...addedCourses];
     console.log(editCourses)
 </script>
 </body>
