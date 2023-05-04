@@ -1,7 +1,7 @@
 import {Component} from "react";
 
 
-export class Body extends Component{
+export class Body extends Component {
     render() {
         return (<>
                 <>
@@ -33,9 +33,9 @@ export class Body extends Component{
                             />
                         </div>
                         <div className="carousel-inner">
-                            <div className="carousel-item active" style={{ height: 500 }}>
+                            <div className="carousel-item active" style={{height: 500}}>
                                 <img
-                                    src="53124-furama-resort-da-nang-1-700x464.jpg"
+                                    src="untitled1/public/53124-furama-resort-da-nang-1-700x464.jpg"
                                     className="d-block w-100"
                                     alt="..."
                                 />
@@ -50,26 +50,34 @@ export class Body extends Component{
                                     </p>
                                 </div>
                             </div>
-                            <div className="carousel-item" style={{ height: 500 }}>
+                            <div className="carousel-item" style={{height: 500}}>
                                 <img
-                                    src="DN734-Furama-da-nang-DDTG-2017-ok.jpg"
+                                    src="untitled1/public/DN734-Furama-da-nang-DDTG-2017-ok.jpg"
                                     className="d-block w-100"
                                     alt="..."
                                 />
                                 <div className="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
+                                    <h5>FURAMA INTERNATIONAL</h5>
+                                    <p>Furama Hotels cung cấp cho khách du lịch giải trí và kinh doanh như
+                                        một bối cảnh được bổ nhiệm để thưởng thức các công việc nghỉ ngơi và
+                                        tiếp thêm sinh lực. Được nuông chiều bởi dịch vụ ấm áp của chúng tôi
+                                        từ trái tim khi bạn đắm mình vào các nền văn hóa độc đáo và những
+                                        trải nghiệm sâu sắc trên hành trình của bạn.</p>
                                 </div>
                             </div>
-                            <div className="carousel-item" style={{ height: 500 }}>
+                            <div className="carousel-item" style={{height: 500}}>
                                 <img
-                                    src="furama-resort-da-nang-03.jpg"
+                                    src="untitled1/public/furama-resort-da-nang-03.jpg"
                                     className="d-block w-100"
                                     alt="..."
                                 />
                                 <div className="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
+                                    <h5>FURAMA INTERNATIONAL</h5>
+                                    <p>Furama Hotels cung cấp cho khách du lịch giải trí và kinh doanh như
+                                        một bối cảnh được bổ nhiệm để thưởng thức các công việc nghỉ ngơi và
+                                        tiếp thêm sinh lực. Được nuông chiều bởi dịch vụ ấm áp của chúng tôi
+                                        từ trái tim khi bạn đắm mình vào các nền văn hóa độc đáo và những
+                                        trải nghiệm sâu sắc trên hành trình của bạn.</p>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +87,7 @@ export class Body extends Component{
                             data-bs-target="#carouselExampleCaptions"
                             data-bs-slide="prev"
                         >
-                            <span className="carousel-control-prev-icon" aria-hidden="true" />
+                            <span className="carousel-control-prev-icon" aria-hidden="true"/>
                             <span className="visually-hidden">Previous</span>
                         </button>
                         <button
@@ -88,7 +96,7 @@ export class Body extends Component{
                             data-bs-target="#carouselExampleCaptions"
                             data-bs-slide="next"
                         >
-                            <span className="carousel-control-next-icon" aria-hidden="true" />
+                            <span className="carousel-control-next-icon" aria-hidden="true"/>
                             <span className="visually-hidden">Next</span>
                         </button>
                     </div>
@@ -111,7 +119,7 @@ export class Body extends Component{
                         <div className="vc_row wpb_row vc_inner vc_row-fluid">
                             <div className="wpb_column vc_column_container vc_col-sm-3">
                                 <div className="vc_column-inner ">
-                                    <div className="wpb_wrapper" />
+                                    <div className="wpb_wrapper"/>
                                 </div>
                             </div>
                             <div className="wpb_column vc_column_container vc_col-sm-6">
@@ -136,15 +144,15 @@ export class Body extends Component{
                             </div>
                             <div className="wpb_column vc_column_container vc_col-sm-3">
                                 <div className="vc_column-inner ">
-                                    <div className="wpb_wrapper" />
+                                    <div className="wpb_wrapper"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="row" style={{ margin: "5%" }}>
-                        <div className="card " style={{ width: "18rem", margin: "auto" }}>
+                    <div className="row" style={{margin: "5%"}}>
+                        <div className="card " style={{width: "18rem", margin: "auto"}}>
                             <img
-                                src="double-bed-ocean-deluxe-furama-da-nang.webp"
+                                src="untitled1/public/double-bed-ocean-deluxe-furama-da-nang.webp"
                                 className="card-img-top"
                                 alt="..."
                             />
@@ -160,7 +168,7 @@ export class Body extends Component{
                                 <a
                                     href="#"
                                     className="btn btn-primary"
-                                    style={{ backgroundColor: "gray" }}
+                                    style={{backgroundColor: "gray"}}
                                 >
                                     Sửa
                                 </a>
@@ -169,7 +177,7 @@ export class Body extends Component{
                                     className="btn btn-primary"
                                     data-bs-toggle="modal"
                                     data-bs-target="#exampleModal"
-                                    style={{ backgroundColor: "red" }}
+                                    style={{backgroundColor: "red"}}
                                 >
                                     Xóa
                                 </button>
@@ -214,9 +222,9 @@ export class Body extends Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="card" style={{ width: "18rem", margin: "auto" }}>
+                        <div className="card" style={{width: "18rem", margin: "auto"}}>
                             <img
-                                src="double-bed-ocean-deluxe-furama-da-nang.webp"
+                                src="untitled1/public/double-bed-ocean-deluxe-furama-da-nang.webp"
                                 className="card-img-top"
                                 alt="..."
                             />
@@ -232,7 +240,7 @@ export class Body extends Component{
                                 <a
                                     href="#"
                                     className="btn btn-primary"
-                                    style={{ backgroundColor: "gray" }}
+                                    style={{backgroundColor: "gray"}}
                                 >
                                     Sửa
                                 </a>
@@ -241,7 +249,7 @@ export class Body extends Component{
                                     className="btn btn-primary"
                                     data-bs-toggle="modal"
                                     data-bs-target="#exampleModal"
-                                    style={{ backgroundColor: "red" }}
+                                    style={{backgroundColor: "red"}}
                                 >
                                     Xóa
                                 </button>
@@ -286,9 +294,9 @@ export class Body extends Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="card" style={{ width: "18rem", margin: "auto" }}>
+                        <div className="card" style={{width: "18rem", margin: "auto"}}>
                             <img
-                                src="double-bed-ocean-deluxe-furama-da-nang.webp"
+                                src="untitled1/public/double-bed-ocean-deluxe-furama-da-nang.webp"
                                 className="card-img-top"
                                 alt="..."
                             />
@@ -304,7 +312,7 @@ export class Body extends Component{
                                 <a
                                     href="#"
                                     className="btn btn-primary"
-                                    style={{ backgroundColor: "gray" }}
+                                    style={{backgroundColor: "gray"}}
                                 >
                                     Sửa
                                 </a>
@@ -313,7 +321,7 @@ export class Body extends Component{
                                     className="btn btn-primary"
                                     data-bs-toggle="modal"
                                     data-bs-target="#exampleModal"
-                                    style={{ backgroundColor: "red" }}
+                                    style={{backgroundColor: "red"}}
                                 >
                                     Xóa
                                 </button>
@@ -359,10 +367,10 @@ export class Body extends Component{
                             </div>
                         </div>
                     </div>
-                    <div className="row" style={{ margin: "5%" }}>
-                        <div className="card" style={{ width: "18rem", margin: "auto" }}>
+                    <div className="row" style={{margin: "5%"}}>
+                        <div className="card" style={{width: "18rem", margin: "auto"}}>
                             <img
-                                src="double-bed-ocean-deluxe-furama-da-nang.webp"
+                                src="untitled1/public/double-bed-ocean-deluxe-furama-da-nang.webp"
                                 className="card-img-top"
                                 alt="..."
                             />
@@ -378,7 +386,7 @@ export class Body extends Component{
                                 <a
                                     href="#"
                                     className="btn btn-primary"
-                                    style={{ backgroundColor: "gray" }}
+                                    style={{backgroundColor: "gray"}}
                                 >
                                     Sửa
                                 </a>
@@ -387,7 +395,7 @@ export class Body extends Component{
                                     className="btn btn-primary"
                                     data-bs-toggle="modal"
                                     data-bs-target="#exampleModal"
-                                    style={{ backgroundColor: "red" }}
+                                    style={{backgroundColor: "red"}}
                                 >
                                     Xóa
                                 </button>
@@ -432,9 +440,9 @@ export class Body extends Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="card" style={{ width: "18rem", margin: "auto" }}>
+                        <div className="card" style={{width: "18rem", margin: "auto"}}>
                             <img
-                                src="double-bed-ocean-deluxe-furama-da-nang.webp"
+                                src="untitled1/public/double-bed-ocean-deluxe-furama-da-nang.webp"
                                 className="card-img-top"
                                 alt="..."
                             />
@@ -450,7 +458,7 @@ export class Body extends Component{
                                 <a
                                     href="#"
                                     className="btn btn-primary"
-                                    style={{ backgroundColor: "gray" }}
+                                    style={{backgroundColor: "gray"}}
                                 >
                                     Sửa
                                 </a>
@@ -459,7 +467,7 @@ export class Body extends Component{
                                     className="btn btn-primary"
                                     data-bs-toggle="modal"
                                     data-bs-target="#exampleModal"
-                                    style={{ backgroundColor: "red" }}
+                                    style={{backgroundColor: "red"}}
                                 >
                                     Xóa
                                 </button>
@@ -504,9 +512,9 @@ export class Body extends Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="card" style={{ width: "18rem", margin: "auto" }}>
+                        <div className="card" style={{width: "18rem", margin: "auto"}}>
                             <img
-                                src="double-bed-ocean-deluxe-furama-da-nang.webp"
+                                src="untitled1/public/double-bed-ocean-deluxe-furama-da-nang.webp"
                                 className="card-img-top"
                                 alt="..."
                             />
@@ -522,7 +530,7 @@ export class Body extends Component{
                                 <a
                                     href="#"
                                     className="btn btn-primary"
-                                    style={{ backgroundColor: "gray" }}
+                                    style={{backgroundColor: "gray"}}
                                 >
                                     Sửa
                                 </a>
@@ -531,7 +539,7 @@ export class Body extends Component{
                                     className="btn btn-primary"
                                     data-bs-toggle="modal"
                                     data-bs-target="#exampleModal"
-                                    style={{ backgroundColor: "red" }}
+                                    style={{backgroundColor: "red"}}
                                 >
                                     Xóa
                                 </button>
@@ -577,10 +585,10 @@ export class Body extends Component{
                             </div>
                         </div>
                     </div>
-                    <div className="row" style={{ margin: "5%" }}>
-                        <div className="card" style={{ width: "18rem", margin: "auto" }}>
+                    <div className="row" style={{margin: "5%"}}>
+                        <div className="card" style={{width: "18rem", margin: "auto"}}>
                             <img
-                                src="double-bed-ocean-deluxe-furama-da-nang.webp"
+                                src="untitled1/public/double-bed-ocean-deluxe-furama-da-nang.webp"
                                 className="card-img-top"
                                 alt="..."
                             />
@@ -596,7 +604,7 @@ export class Body extends Component{
                                 <a
                                     href="#"
                                     className="btn btn-primary"
-                                    style={{ backgroundColor: "gray" }}
+                                    style={{backgroundColor: "gray"}}
                                 >
                                     Sửa
                                 </a>
@@ -605,7 +613,7 @@ export class Body extends Component{
                                     className="btn btn-primary"
                                     data-bs-toggle="modal"
                                     data-bs-target="#exampleModal"
-                                    style={{ backgroundColor: "red" }}
+                                    style={{backgroundColor: "red"}}
                                 >
                                     Xóa
                                 </button>
@@ -650,9 +658,9 @@ export class Body extends Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="card" style={{ width: "18rem", margin: "auto" }}>
+                        <div className="card" style={{width: "18rem", margin: "auto"}}>
                             <img
-                                src="double-bed-ocean-deluxe-furama-da-nang.webp"
+                                src="untitled1/public/double-bed-ocean-deluxe-furama-da-nang.webp"
                                 className="card-img-top"
                                 alt="..."
                             />
@@ -668,7 +676,7 @@ export class Body extends Component{
                                 <a
                                     href="#"
                                     className="btn btn-primary"
-                                    style={{ backgroundColor: "gray" }}
+                                    style={{backgroundColor: "gray"}}
                                 >
                                     Sửa
                                 </a>
@@ -677,7 +685,7 @@ export class Body extends Component{
                                     className="btn btn-primary"
                                     data-bs-toggle="modal"
                                     data-bs-target="#exampleModal"
-                                    style={{ backgroundColor: "red" }}
+                                    style={{backgroundColor: "red"}}
                                 >
                                     Xóa
                                 </button>
@@ -722,9 +730,9 @@ export class Body extends Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="card" style={{ width: "18rem", margin: "auto" }}>
+                        <div className="card" style={{width: "18rem", margin: "auto"}}>
                             <img
-                                src="double-bed-ocean-deluxe-furama-da-nang.webp"
+                                src="untitled1/public/double-bed-ocean-deluxe-furama-da-nang.webp"
                                 className="card-img-top"
                                 alt="..."
                             />
@@ -740,7 +748,7 @@ export class Body extends Component{
                                 <a
                                     href="#"
                                     className="btn btn-primary"
-                                    style={{ backgroundColor: "gray" }}
+                                    style={{backgroundColor: "gray"}}
                                 >
                                     Sửa
                                 </a>
@@ -749,7 +757,7 @@ export class Body extends Component{
                                     className="btn btn-primary"
                                     data-bs-toggle="modal"
                                     data-bs-target="#exampleModal"
-                                    style={{ backgroundColor: "red" }}
+                                    style={{backgroundColor: "red"}}
                                 >
                                     Xóa
                                 </button>
@@ -795,13 +803,13 @@ export class Body extends Component{
                             </div>
                         </div>
                     </div>
-                    <div style={{ textAlign: "center", margin: "auto" }}>
+                    <div style={{textAlign: "center", margin: "auto"}}>
                         <a
                             href=""
                             className="btn btn"
-                            style={{ backgroundColor: "black", marginBottom: 20 }}
+                            style={{backgroundColor: "black", marginBottom: 20}}
                         >
-                            <span style={{ color: "linen" }}>Xem tất cả các phòng tại đây</span>
+                            <span style={{color: "linen"}}>Xem tất cả các phòng tại đây</span>
                         </a>
                     </div>
                     {/*phân trang*/}
@@ -880,7 +888,7 @@ export class Body extends Component{
                     </nav>
                 </>
 
-        </>
-    );
+            </>
+        );
     }
-    }
+}
