@@ -5,7 +5,7 @@ export class Header extends Component {
         return (
             <>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light"
-                     style={{position: "fixed",zIndex: 2,left: 0,right: 0,top:0,height: "10%",backgroundColor: "#046056"}}>
+                     style={{padding:0,position: "fixed",zIndex: 2,left: 0,right: 0,top:0,height: "10%",backgroundColor: "#046056"}}>
                     <div className="container-fluid" style={{backgroundColor: "#046056",height: "100%"}}>
                         <a className="navbar-brand" href="#" style={{marginRight: "20px"}}>Furama</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"

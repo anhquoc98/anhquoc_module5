@@ -1,7 +1,7 @@
 import {Component} from "react";
 import {Header} from "../Header";
-import {Body} from "../Body";
 import {Footer} from "../Footer";
+import {ListCustomerFurama} from "../../data/ListCustomerFurama";
 
 export class ListCustomer extends Component{
     render() {
@@ -10,7 +10,7 @@ export class ListCustomer extends Component{
                 <div className="header">
                     <Header/>
                 </div>
-                <div className="content">
+                <div className="mt-5 pt-5 content" >
                     <>
                         <h2 style={{ textAlign: "center" }}>Danh sách khách hàng</h2>
                         <div style={{ marginTop: 10, marginBottom: 10 }}>
@@ -30,344 +30,76 @@ export class ListCustomer extends Component{
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Nguyên Văn A</td>
-                                    <td>10-11-1998</td>
-                                    <td>Nam</td>
-                                    <td>201725479</td>
-                                    <td>097523654</td>
-                                    <td>abc@gmail.com</td>
-                                    <td>Dimond</td>
-                                    <td>01 Nguyễn Tất Thành</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Nguyên Văn A</td>
-                                    <td>10-11-1998</td>
-                                    <td>Nam</td>
-                                    <td>201725479</td>
-                                    <td>097523654</td>
-                                    <td>abc@gmail.com</td>
-                                    <td>Dimond</td>
-                                    <td>01 Nguyễn Tất Thành</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal1"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel1">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
+                                {ListCustomerFurama.map(customElements=>(
+                                    <tr>
+                                        <th scope="row">{customElements.id}</th>
+                                        <td>{customElements.name}</td>
+                                        <td>{customElements.birthDay}</td>
+                                        <td>{customElements.gender}</td>
+                                        <td>{customElements.numberCMNN}</td>
+                                        <td>{customElements.numberPhone}</td>
+                                        <td>{customElements.email}</td>
+                                        <td>{customElements.title}</td>
+                                        <td>{customElements.address}</td>
+                                        <td>
+                                            <a
+                                                href="#"
+                                                className="btn btn-primary"
+                                                style={{ backgroundColor: "gray" }}
+                                            >
+                                                Sửa
+                                            </a>
+                                            <button
+                                                type="button"
+                                                className="btn btn-primary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"
+                                                style={{ backgroundColor: "red" }}
+                                            >
+                                                Xóa
+                                            </button>
+                                            {/*            modal*/}
+                                            <div
+                                                className="modal fade"
+                                                id="exampleModal"
+                                                tabIndex={-1}
+                                                aria-labelledby="exampleModalLabel"
+                                                aria-hidden="true"
+                                            >
+                                                <div className="modal-dialog">
+                                                    <div className="modal-content">
+                                                        <div className="modal-header">
+                                                            <h1 className="modal-title fs-5" id="exampleModalLabel">
+                                                                Xóa dịch vụ
+                                                            </h1>
+                                                            <button
+                                                                type="button"
+                                                                className="btn-close"
+                                                                data-bs-dismiss="modal"
+                                                                aria-label="Close"
+                                                            />
+                                                        </div>
+                                                        <div className="modal-body">Bạn muốn xóa khách hàng</div>
+                                                        <div className="modal-footer">
+                                                            <button
+                                                                type="button"
+                                                                className="btn btn-secondary"
+                                                                data-bs-dismiss="modal"
+                                                            >
+                                                                Thoát
+                                                            </button>
+                                                            <button type="button" className="btn btn-primary">
+                                                                Xóa
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Nguyên Văn A</td>
-                                    <td>10-11-1998</td>
-                                    <td>Nam</td>
-                                    <td>201725479</td>
-                                    <td>097523654</td>
-                                    <td>abc@gmail.com</td>
-                                    <td>Dimond</td>
-                                    <td>01 Nguyễn Tất Thành</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal2"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel2">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Nguyên Văn A</td>
-                                    <td>10-11-1998</td>
-                                    <td>Nam</td>
-                                    <td>201725479</td>
-                                    <td>097523654</td>
-                                    <td>abc@gmail.com</td>
-                                    <td>Dimond</td>
-                                    <td>01 Nguyễn Tất Thành</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal3"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel3">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Nguyên Văn A</td>
-                                    <td>10-11-1998</td>
-                                    <td>Nam</td>
-                                    <td>201725479</td>
-                                    <td>097523654</td>
-                                    <td>abc@gmail.com</td>
-                                    <td>Dimond</td>
-                                    <td>01 Nguyễn Tất Thành</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal4"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel4">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
+
+                                ))}
+
                                 </tbody>
                             </table>
                         </div>
