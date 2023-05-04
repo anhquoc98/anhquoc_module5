@@ -14,16 +14,16 @@ export function Counter() {
     return (
         <div>
             <div>
-                Count1:{count}
+                Count1: {count}
                 <div>
-                    <button onClick={handleClick}>add
+                    <button onClick={handleClick}>add 1
                     </button>
                 </div>
             </div>
             <div>
-                Count2:{count1}
+                Count2: {count1}
                 <div>
-                    <button onClick={handleClick1}>add
+                    <button onClick={handleClick1}>add 2
                     </button>
                 </div>
             </div>
