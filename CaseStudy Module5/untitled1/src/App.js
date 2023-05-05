@@ -8,7 +8,7 @@ import {ListCustomer} from "./component/home/customer/ListCustomer";
 function App() {
     return (
         <>
-            <ListCustomer/>
+            <ListContract/>
         </>
     );
 }

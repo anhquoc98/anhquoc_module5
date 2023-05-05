@@ -2,6 +2,7 @@ import {Component} from "react";
 import {Header} from "../Header";
 
 import {Footer} from "../Footer";
+import {ListContractFurama} from "../../data/ListContractFurama";
 
 export class ListContract extends Component{
     render() {
@@ -10,7 +11,7 @@ export class ListContract extends Component{
                 <div className="header">
                     <Header/>
                 </div>
-                <div className="content">
+                <div className="mt-5 pt-5 content">
                     <>
                         <h2 style={{ textAlign: "center" }}>Danh sách hợp đồng</h2>
                         <div style={{ marginTop: 10, marginBottom: 10 }}>
@@ -25,390 +26,72 @@ export class ListContract extends Component{
                                     <th scope="col">Tác vụ</th>
                                 </tr>
                                 </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">003</th>
-                                    <td>10-11-2023</td>
-                                    <td>10-12-2023</td>
-                                    <td>41412</td>
-                                    <td>10009</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal2"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel2">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">002</th>
-                                    <td>10-11-2023</td>
-                                    <td>10-12-2023</td>
-                                    <td>41412</td>
-                                    <td>10009</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal1"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel1">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
+                                {ListContractFurama.map(listContract=>(
+                                    <tr>
+                                        <th scope="row">{listContract.idContract}</th>
+                                        <td>{listContract.startDay}</td>
+                                        <td>{listContract.endDay}</td>
+                                        <td>{listContract.money}</td>
+                                        <td>{listContract.title}</td>
+                                        <td>
+                                            <a
+                                                href="#"
+                                                className="btn btn-primary"
+                                                style={{ backgroundColor: "gray" }}
+                                            >
+                                                Sửa
+                                            </a>
+                                            <button
+                                                type="button"
+                                                className="btn btn-primary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"
+                                                style={{ backgroundColor: "red" }}
+                                            >
+                                                Xóa
+                                            </button>
+                                            {/*            modal*/}
+                                            <div
+                                                className="modal fade"
+                                                id="exampleModal2"
+                                                tabIndex={-1}
+                                                aria-labelledby="exampleModalLabel"
+                                                aria-hidden="true"
+                                            >
+                                                <div className="modal-dialog">
+                                                    <div className="modal-content">
+                                                        <div className="modal-header">
+                                                            <h1 className="modal-title fs-5" id="exampleModalLabel2">
+                                                                Xóa dịch vụ
+                                                            </h1>
+                                                            <button
+                                                                type="button"
+                                                                className="btn-close"
+                                                                data-bs-dismiss="modal"
+                                                                aria-label="Close"
+                                                            />
+                                                        </div>
+                                                        <div className="modal-body">Bạn muốn xóa khách hàng</div>
+                                                        <div className="modal-footer">
+                                                            <button
+                                                                type="button"
+                                                                className="btn btn-secondary"
+                                                                data-bs-dismiss="modal"
+                                                            >
+                                                                Thoát
+                                                            </button>
+                                                            <button type="button" className="btn btn-primary">
+                                                                Xóa
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">004</th>
-                                    <td>10-11-2023</td>
-                                    <td>10-12-2023</td>
-                                    <td>41412</td>
-                                    <td>10009</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal4"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel5">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">005</th>
-                                    <td>10-11-2023</td>
-                                    <td>10-12-2023</td>
-                                    <td>41412</td>
-                                    <td>10009</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal5"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel6">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">007</th>
-                                    <td>10-11-2023</td>
-                                    <td>10-12-2023</td>
-                                    <td>41412</td>
-                                    <td>10009</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">008</th>
-                                    <td>10-11-2023</td>
-                                    <td>10-12-2023</td>
-                                    <td>41412</td>
-                                    <td>10009</td>
-                                    <td>
-                                        <a
-                                            href="#"
-                                            className="btn btn-primary"
-                                            style={{ backgroundColor: "gray" }}
-                                        >
-                                            Sửa
-                                        </a>
-                                        <button
-                                            type="button"
-                                            className="btn btn-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"
-                                            style={{ backgroundColor: "red" }}
-                                        >
-                                            Xóa
-                                        </button>
-                                        {/*            modal*/}
-                                        <div
-                                            className="modal fade"
-                                            id="exampleModal"
-                                            tabIndex={-1}
-                                            aria-labelledby="exampleModalLabel"
-                                            aria-hidden="true"
-                                        >
-                                            <div className="modal-dialog">
-                                                <div className="modal-content">
-                                                    <div className="modal-header">
-                                                        <h1 className="modal-title fs-5" id="exampleModalLabel">
-                                                            Xóa dịch vụ
-                                                        </h1>
-                                                        <button
-                                                            type="button"
-                                                            className="btn-close"
-                                                            data-bs-dismiss="modal"
-                                                            aria-label="Close"
-                                                        />
-                                                    </div>
-                                                    <div className="modal-body">Bạn muốn xóa khách hàng</div>
-                                                    <div className="modal-footer">
-                                                        <button
-                                                            type="button"
-                                                            className="btn btn-secondary"
-                                                            data-bs-dismiss="modal"
-                                                        >
-                                                            Thoát
-                                                        </button>
-                                                        <button type="button" className="btn btn-primary">
-                                                            Xóa
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
+                                        </td>
+                                    </tr>
+
+                                    ))}
+
                             </table>
                         </div>
                         {/*Phân trang*/}
