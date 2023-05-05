@@ -14,7 +14,7 @@ export class ListCustomer extends Component{
                     <>
                         <h2 style={{ textAlign: "center" }}>Danh sách khách hàng</h2>
                         <div style={{ marginTop: 10, marginBottom: 10 }}>
-                            <table className="table">
+                            <table className="table table-bordered">
                                 <thead>
                                 <tr>
                                     <th scope="col">id</th>
