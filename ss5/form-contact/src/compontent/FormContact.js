@@ -25,16 +25,15 @@ export function FormContact() {
                     email: Yup.string()
                         .required("nhập email")
                         .email("nhập đúng email")
-                })
-
-                } onSubmit={(values, {setSubmitting}) => {
-                setTimeout(() => {
-                    console.log(values)
-                    setSubmitting(false)
-                    toast('thêm thành công')
-                    navigate('/')
-                }, 1000)
-            }}
+                })}
+                onSubmit={(values, {setSubmitting}) => {
+                    setTimeout(() => {
+                        console.log(values)
+                        setSubmitting(false)
+                        toast(`thêm thành công`)
+                        navigate('/')
+                    }, 1000)
+                }}
             >{
                 ({isSubmitting}) => (
                     <div className="flex items-center justify-center p-12">
