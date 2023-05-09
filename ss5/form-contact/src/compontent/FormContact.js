@@ -24,7 +24,9 @@ export function FormContact() {
                         .required("Nhập tên"),
                     email: Yup.string()
                         .required("nhập email")
-                        .email("nhập đúng email")
+                        .email("nhập đúng email"),
+                    phone: Yup.string()
+                        .required("nhập số điện thoại")
                 })}
                 onSubmit={(values, {setSubmitting}) => {
                     setTimeout(() => {
