@@ -52,10 +52,10 @@ export function Update() {
                         console.log(values);
                         try {
                             await libraryService.edit(values)
-                            toast("Update failed");
-                        } catch (error) {
                             toast("Update successful");
-                            navigate("/");
+                            navigate("/"); 
+                        } catch (error) {
+                            toast("Update failed");
                         }
 
                         setSubmitting(false);

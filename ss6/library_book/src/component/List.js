@@ -16,9 +16,9 @@ export function List() {
     const handleDelete = async (id) => {
         try {
             await libraryService.remove(id)
-            toast.success("Deleted failed!");
-        } catch (error) {
             toast.success("Deleted successfully!");
+        } catch (error) {
+            toast.success("Deleted failed!");
         }
     };
 
