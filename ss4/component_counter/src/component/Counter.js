@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export function Counter() {
+export function UseIncrement()() {
     const [count, setCount] = useState(0);
     const [count1, setCount1] = useState(0);
     const handleClick = () => {
