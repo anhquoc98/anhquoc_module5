@@ -11,8 +11,8 @@ export function HealthDeclaration() {
             <Formik
                 initialValues={{
                     name: 'Nguyễn Văn A',
-                    cmnd: '1054841495',
-                    birthday: 1900,
+                    idCard: '',
+                    birthday: 1990,
                     nationality: 'Việt Nam',
                     city: 'Đà Nẵng',
                     district: 'Thanh Khê'
@@ -25,7 +25,7 @@ export function HealthDeclaration() {
                 validationSchema={Yup.object({
                     name: Yup.string()
                         .required("Nhập tên"),
-                    cmnd: Yup.string()
+                    idCard: Yup.string()
                         .required("nhập chứng minh nhân dân"),
                     birthday: Yup.number().integer()
                         .required("nhập năm sinh")
