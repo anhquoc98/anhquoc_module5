@@ -56,9 +56,9 @@ export class Edit extends Component{
                     </form>
                 </div>
 
-                );
-            }
-            }
+
+
+
             </>
         );
     }
